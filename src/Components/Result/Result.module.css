@@ -1,0 +1,9 @@
+.Confirmation {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-endsx;
+}
+
+.Confirmation button {
+  margin: 5px;
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import DataTable from "./Components/DataTable/DataTable";
 import data from "./data/data.json";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     }
   }, []);
 
-  return <div className="App">{loading ? <div>Loading...</div> : null}</div>;
+  return <div>{loading ? <div></div> : <DataTable />}</div>;
 }
 
 export default App;

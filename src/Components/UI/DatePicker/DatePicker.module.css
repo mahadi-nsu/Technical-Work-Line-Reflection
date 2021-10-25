@@ -1,0 +1,64 @@
+.DatePicker {
+  display: flex;
+  flex-flow: row;
+}
+.FromCalendar {
+  display: flex;
+
+  align-items: center;
+  margin-right: 30px;
+  padding-left: 7px;
+}
+.FromCalendar h4 {
+  font-weight: normal;
+  padding: 5px;
+}
+.FromCalendar p {
+  margin: 0;
+  height: 40px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  box-shadow: 0px -1px 5px 1px rgba(151, 137, 137, 0.75);
+  -webkit-box-shadow: 0px -1px 5px 1px rgba(151, 137, 137, 0.75);
+  -moz-box-shadow: 0px -1px 5px 1px rgba(151, 137, 137, 0.75);
+  border-radius: 0.2em;
+}
+
+.FromCalendar img {
+  padding: 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.ToCalendar {
+  display: flex;
+  align-items: center;
+  padding-left: 7px;
+}
+.ToCalendar h4 {
+  font-weight: normal;
+  padding: 5px;
+}
+
+.ToCalendar p {
+  margin: 0;
+  height: 40px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  box-shadow: 0px -1px 5px 1px rgba(151, 137, 137, 0.75);
+  -webkit-box-shadow: 0px -1px 5px 1px rgba(151, 137, 137, 0.75);
+  -moz-box-shadow: 0px -1px 5px 1px rgba(151, 137, 137, 0.75);
+  border-radius: 0.2em;
+}
+
+.ToCalendar img {
+  padding: 10px;
+  height: 25px;
+  width: 25px;
+}

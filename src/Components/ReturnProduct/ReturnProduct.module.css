@@ -1,0 +1,28 @@
+.ReturnProduct {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 200px;
+  width: 500px;
+}
+
+.ReturnProduct input {
+  text-decoration: none;
+  height: 30px;
+  margin-right: 100px;
+}
+.Dropdown {
+  /* display: flex; */
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+.Confirmation {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-endsx;
+}
+
+.Confirmation button {
+  margin: 5px;
+}
