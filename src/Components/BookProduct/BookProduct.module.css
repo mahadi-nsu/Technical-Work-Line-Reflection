@@ -2,13 +2,13 @@
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  height: 200px;
+  height: 350px;
   width: 500px;
 }
 
 .Dropdown {
-  /* display: flex; */
   padding-right: 100px;
+  padding-bottom: 20px;
 }
 
 .Confirmation {
