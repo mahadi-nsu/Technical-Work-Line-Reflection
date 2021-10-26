@@ -5,7 +5,7 @@ const SearchBox = ({ handleInputData }) => {
   return (
     <form className={styles.searchBox}>
       <input
-        placeholder="Enter Keyword to Search"
+        placeholder="Enter Name/Code to Search"
         type="text"
         className={styles.searchInput}
         onChange={handleInputData}
