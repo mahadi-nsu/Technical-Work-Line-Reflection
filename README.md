@@ -26,4 +26,5 @@ The Application Runs on **localhost:3000**
 - [x] Added calculation as explained in the docs.
 - [ ] proper validation add in all inputs
 - [ ] deploy site
+- [ ] add testing
 
