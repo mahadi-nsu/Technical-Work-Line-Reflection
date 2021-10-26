@@ -14,7 +14,7 @@ function App() {
     }
   }, []);
 
-  return <div>{loading ? <div></div> : <DataTable />}</div>;
+  return <div>{loading ? <div>Loading ... </div> : <DataTable />}</div>;
 }
 
 export default App;

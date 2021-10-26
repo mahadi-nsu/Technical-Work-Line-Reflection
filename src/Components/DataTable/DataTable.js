@@ -9,6 +9,7 @@ const pType = {
   BOOK_PRODUCT: "book_product",
   RETURN_PRODUCT: "return_product",
 };
+
 const initType = pType.BOOK_PRODUCT;
 
 const DataTable = () => {
@@ -17,6 +18,7 @@ const DataTable = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState(initType);
 
+  // data reading from local storage
   useEffect(() => {
     const dataFRomStorage = localStorage.getItem("apiData");
     if (dataFRomStorage) {
@@ -32,6 +34,7 @@ const DataTable = () => {
     setModalType(pType.BOOK_PRODUCT);
     ModalHandler();
   };
+
   const returnHandler = () => {
     setModalType(pType.RETURN_PRODUCT);
     ModalHandler();
@@ -60,8 +63,13 @@ const DataTable = () => {
       "Mileage",
     ];
 
+    // render items
     return headerElement.map((key, index) => {
-      return <th className={styles.tableHead} key={index}>{key.toUpperCase()}</th>;
+      return (
+        <th className={styles.tableHead} key={index}>
+          {key.toUpperCase()}
+        </th>
+      );
     });
   };
 
@@ -90,11 +98,15 @@ const DataTable = () => {
             <tr key={code} style={{ width: "100%" }}>
               <td className={styles.tableData}>{name}</td>
               <td className={styles.tableData}>{code}</td>
-              <td className={styles.tableData}>{availability ? "True" : "False"}</td>
-              <td className={styles.tableData}>{needing_repair ? "True" : "False"}</td>
+              <td className={styles.tableData}>
+                {availability ? "True" : "False"}
+              </td>
+              <td className={styles.tableData}>
+                {needing_repair ? "True" : "False"}
+              </td>
               <td className={styles.tableData}>
                 {durability} / {max_durability}
-              </td >
+              </td>
               <td className={styles.tableData}>{mileage}</td>
             </tr>
           );
@@ -107,7 +119,14 @@ const DataTable = () => {
       <div className={styles.tableCon}>
         <div className={styles.searchDiv}>
           <div className={styles.searchIcon}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="bi bi-search"
+              viewBox="0 0 16 16"
+            >
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg>
           </div>
@@ -118,12 +137,10 @@ const DataTable = () => {
       </div>
       <div className={styles.buttonDiv}>
         <button className={styles.button} onClick={() => bookHandler()}>
-          {" "}
-          Book{" "}
+          Book
         </button>
         <button className={styles.button} onClick={() => returnHandler()}>
-          {" "}
-          Return{" "}
+          Return
         </button>
       </div>
 
