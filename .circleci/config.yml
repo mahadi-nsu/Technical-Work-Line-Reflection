@@ -43,9 +43,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-    //   # run tests
-    //   - run: npm test
-
 # Orchestrate our job run sequence
 workflows:
   version: 2
