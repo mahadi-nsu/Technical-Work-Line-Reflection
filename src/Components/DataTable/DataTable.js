@@ -99,10 +99,10 @@ const DataTable = () => {
               <td className={styles.tableData}>{name}</td>
               <td className={styles.tableData}>{code}</td>
               <td className={styles.tableData}>
-                {availability ? "True" : "False"}
+                {availability ? "Yes" : "No"}
               </td>
               <td className={styles.tableData}>
-                {needing_repair ? "True" : "False"}
+                {needing_repair ? "Yes" : "No"}
               </td>
               <td className={styles.tableData}>
                 {durability} / {max_durability}
