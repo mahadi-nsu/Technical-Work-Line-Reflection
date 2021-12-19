@@ -25,7 +25,7 @@ The Application Runs on **localhost:3000**
 - [x] Data Updated to localstorage according to calculation and final state.
 - [x] Added calculation as explained in the docs.
 - [x] Dockerize the app
-- [ ] Implement Circle CI
+- [x] Implement Circle CI
 - [ ] Implement Circle CD
 - [ ] Host to GCP
 
