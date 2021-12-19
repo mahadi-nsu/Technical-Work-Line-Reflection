@@ -24,7 +24,7 @@ The Application Runs on **localhost:3000**
 - [x] Modal Added for **Book** and **Return**
 - [x] Data Updated to localstorage according to calculation and final state.
 - [x] Added calculation as explained in the docs.
-- [ ] Dockerize the app
+- [x] Dockerize the app
 - [ ] Implement Circle CI
 - [ ] Implement Circle CD
 - [ ] Host to GCP
